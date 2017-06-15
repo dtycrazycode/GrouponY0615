@@ -10,4 +10,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.gods.y.groupon.ui.GuideActivity">
 
+    <android.support.v4.view.ViewPager
+        android:id="@+id/guide_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+    <com.viewpagerindicator.CirclePageIndicator
+        android:layout_alignParentBottom="true"
+        android:id="@+id/guide_select"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 </RelativeLayout>

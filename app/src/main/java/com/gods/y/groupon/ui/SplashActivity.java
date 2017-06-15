@@ -1,14 +1,11 @@
 package com.gods.y.groupon.ui;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
 import com.gods.y.groupon.R;
-import com.gods.y.groupon.config.Constant;
 import com.gods.y.groupon.util.SharedPreferencesUtil;
 
 public class SplashActivity extends AppCompatActivity {
@@ -26,12 +23,14 @@ public class SplashActivity extends AppCompatActivity {
 
                 Intent intent;
                 if (spu.isFirst()){
-                    intent = new Intent(SplashActivity.this,GuideActivity.class);
+//                if (true) {
+                    intent = new Intent(SplashActivity.this, GuideActivity.class);
                     spu.setFirst(false);
-                }else {
-                    intent = new Intent(SplashActivity.this,MainActivity.class);
+                } else {
+                    intent = new Intent(SplashActivity.this, MainActivity.class);
                 }
                 startActivity(intent);
+//                overridePendingTransition(R.anim.splash_animation_alpha_scale_01, R.anim.animation_nothing);
                 finish();
             }
         }, 1500);

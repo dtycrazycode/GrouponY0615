@@ -1,0 +1,19 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_comer_guide_fg_1"
+    tools:context="com.gods.y.groupon.fragment.GuideDFragment">
+
+    <Button
+        android:background="@drawable/selector_btn"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/skip"
+        android:text="立刻开启"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:layout_width="120dp"
+        android:layout_height="36dp" />
+
+</FrameLayout>
